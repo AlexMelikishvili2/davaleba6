@@ -1,37 +1,5 @@
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-body {
-    background-color: #F1F1F1;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-header > nav {
-    width: 1166px;
-    height: 80px;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-nav > a {
-    text-decoration: none;
-    font-size: 11;
-    font-family: "Roboto", sans-serif;
-    margin-right: 35px;
-    color: black;
-    font-weight: 700;
-}
+@import "_reset&head";
+@import "_mixin";
 
 main {
     width: 1166px;
@@ -158,10 +126,18 @@ p, span {
  .child5 {
     margin-top: 28px;
     display: inline-block;
- }
+
+    &:hover {
+    transform: scale(0.9);
+    }
+}
 
  .child6 {
     display: inline-block;
+
+    &:hover {
+    transform: scale(0.9);
+    }
  }
 
  .img2 {
@@ -179,12 +155,21 @@ p, span {
  .child7 {
     display: inline-block;
     margin-top: 90px;
+
+    &:hover {
+    transform: scale(0.9);
+    }
  }
 
  .child8 {
     display: inline-block;
     margin-top: 90px;
+
+    &:hover {
+    transform: scale(0.9);
+    }
  }
+
 
  footer {
     width: 100%;
@@ -200,14 +185,7 @@ p, span {
 }
 
 ol {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    color: #818687;
-    list-style-type: none;
-    margin-top: 59px;
-    margin-right: 75px;
+   @include card;
 }
 
 li {
@@ -215,10 +193,7 @@ li {
 }
 
 #last {
-    margin-left: 40px;
-    position: absolute;
-    top: 60px;
-    display: inline-block;
+   @include last;
 }
 
 #geolab {

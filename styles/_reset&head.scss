@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    background-color: #F1F1F1;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header > nav {
+    width: 1166px;
+    height: 80px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+nav > a {
+    text-decoration: none;
+    font-size: 11;
+    font-family: "Roboto", sans-serif;
+    margin-right: 35px;
+    color: black;
+    font-weight: 700;
+}
